@@ -1,0 +1,15 @@
+$background-color: grey;
+
+.animatedModalBlock {
+  width: 90%;
+  height: 85vh;
+  background-color: $background-color;
+  margin: 4% auto;
+}
+.closeButton {
+  position: relative;
+  top:-8%;
+  left: 97%;
+  font-size: 1.5rem;
+  color: black;
+}

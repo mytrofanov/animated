@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import ModalAnimated from "./components/modalAnimated";
+import Button from 'react-bootstrap/Button';
+import React, {useState} from 'react';
+import s from './app.module.scss'
 
 function App() {
+    const [showModal, setShowModal] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+
+       <div className={s.centeredButtonBox}>
+           Bootstrap button:
+           <Button variant="secondary" onClick={()=>{setShowModal(!showModal)}}>Animated modal block</Button>
+       </div>
+       {showModal ? <ModalAnimated  setShowModal={setShowModal} showModal={showModal}/> : null}
+
+
+   </div>
   );
 }
 
