@@ -13,3 +13,62 @@ $background-color: grey;
   font-size: 1.5rem;
   color: black;
 }
+
+@media screen and (max-width: 350px) {
+  .closeButton {
+    font-size: 1.5rem;
+    left: 91%;
+    top:-6%;
+  }
+}
+@media screen  and (min-width: 350px){
+  .closeButton {
+    font-size: 1.5rem;
+    left: 91%;
+    top:-6%;
+  }
+}
+
+@media screen and (min-width: 500px){
+  .closeButton {
+    left: 93%;
+    top:-6%;
+  }
+}
+@media screen and (min-width: 600px){
+  .closeButton {
+    left: 94%;
+    top:-6%;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .closeButton {
+    left: 95%;
+    top:-6%;
+  }
+}
+@media screen and (min-width: 800px){
+  .closeButton {
+    left: 96%;
+    top:-6%;
+  }
+}
+@media screen and (min-width: 1000px){
+  .closeButton {
+    left: 97%;
+    top:-6%;
+  }
+}
+@media screen and (min-width: 1300px){
+  .closeButton {
+    font-size: 2rem;
+    left: 96%;
+    top:-8%;
+  }
+}
+@media screen and (min-width: 1500px){
+  .closeButton {
+    left: 97%;
+  }
+}
