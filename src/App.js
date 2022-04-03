@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import React, {useState} from 'react';
 import s from './app.module.scss'
 import ButtonAnimated from "./components/buttonAnimated";
+import ClickAnimated from "./components/clickAnimated";
 
 function App() {
     const [showModal, setShowModal] = useState(false)
@@ -15,7 +16,7 @@ function App() {
        </div>
        {showModal ? <ModalAnimated  setShowModal={setShowModal} showModal={showModal}/> : null}
         <ButtonAnimated/>
-
+       <ClickAnimated/>
    </div>
   );
 }
